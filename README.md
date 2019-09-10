@@ -1,5 +1,5 @@
 
-[Demo](https://oksanarutska.github.io/Survey-app/public/index.html)
+[Demo](https://oksanarutska.github.io/popUp/public/index.html)
 ## Technology
 - scss
 - js
