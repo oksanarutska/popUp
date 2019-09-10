@@ -1,11 +1,12 @@
 document.querySelector('.main_button').addEventListener('click', function(e) {
-  document.querySelector('.modal').classList.remove('hideAnimation');
+  document.querySelector('.modal-container').classList.remove('hideAnimation');
   document.querySelector('.modal').classList.remove('hide')
 });
 
 function element(){
-  document.querySelector('.modal').classList.add('hideAnimation');
+  document.querySelector('.modal-container').classList.add('hideAnimation');
   setTimeout(function() {
+    document.querySelector('.modal-container').classList.add('hide')
     document.querySelector('.modal').classList.add('hide')
   },1000)
 }
