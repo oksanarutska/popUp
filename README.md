@@ -1,7 +1,7 @@
 
-[Demo](https://oksanarutska.github.io/popUp/public/index.html)
+[Demo Pop Up](https://oksanarutska.github.io/popUp/public/index.html)
 
-[Demo](https://oksanarutska.github.io/popUp/public/index_book.html)
+[Demo Seach Books](https://oksanarutska.github.io/popUp/public/index_book.html)
 
 ## Technology
 - scss
