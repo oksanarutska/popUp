@@ -14,3 +14,6 @@ document.querySelector('.modal-container_buttons--cancel').addEventListener('cli
 
 document.querySelector('.modal-container_buttons--uninstall').addEventListener('click', element);
 document.querySelector('.modal-container__button-close').addEventListener('click',element);
+
+
+

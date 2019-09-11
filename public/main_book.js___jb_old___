@@ -1,0 +1,32 @@
+var inputElement = document.querySelector(".book-search__input");
+var timer;
+inputElement.addEventListener("input", function(e) {
+  if (timer) {
+    clearTimeout(timer);
+  }
+
+  if (inputElement.value.length > 2) {
+
+    timer = setTimeout(function() {
+      console.log(inputElement.value);
+
+      var dataBooks = fetch("https://www.googleapis.com/books/v1/volumes?q=search+terms")
+        .then(response => response.json())
+        .then(data => {
+          console.log(data.items);
+            var m = data.items.filter(e => e.volumeInfo.authors.some(au => au.includes(inputElement.value)));
+
+
+          console.log( m[0].volumeInfo.authors );
+          document.querySelector('.book-search_result').innerHTML = `<p>${m[0].volumeInfo.authors}</p>
+          <p>${m[0].volumeInfo.title}</p>
+
+`
+        });
+
+
+    }, 3000);
+  }
+
+
+});

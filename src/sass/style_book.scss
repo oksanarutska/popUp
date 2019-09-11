@@ -1,0 +1,50 @@
+@import "variable";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.information{
+  max-width: 400px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  &_items{
+    display: flex;
+    width: 100%;
+    align-items: start;
+    margin: 10px 0;
+
+  }
+  &__chapter{
+    color: $color_gray;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  &__tittle{
+    font-family: $font-family;
+    font-size: 14px;
+    color: $color_black_light;
+  }
+
+}
+
+.book-search{
+  display: flex;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.book-search__input{
+  margin: 0 auto;
+  height: 50px;
+  padding: 10px 30px;
+  color: $color_black_light;
+
+}
