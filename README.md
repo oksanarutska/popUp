@@ -1,5 +1,7 @@
 
 [Demo](https://oksanarutska.github.io/popUp/public/index.html)
+[Demo](https://oksanarutska.github.io/popUp/public/index_book.html)
+
 ## Technology
 - scss
 - js
